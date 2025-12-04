@@ -1,0 +1,2 @@
+/Users/nijatech/flutter wokspace studio/binthaentenantapp/android/app/.cxx/RelWithDebInfo/59384o3v/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/nijatech/flutter wokspace studio/binthaentenantapp/android/app/.cxx/RelWithDebInfo/59384o3v/armeabi-v7a/CMakeFiles/rebuild_cache.dir

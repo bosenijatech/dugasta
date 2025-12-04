@@ -1,0 +1,1 @@
+/Users/nijatech/flutter wokspace studio/binthaentenantapp/build/app/intermediates/cxx/RelWithDebInfo/59384o3v/obj/arm64-v8a
