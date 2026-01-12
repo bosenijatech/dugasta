@@ -21,6 +21,7 @@ void main() async {
   //   await NotificationService.instance.initialize();
   // }
   await Prefs.init();
+WidgetsFlutterBinding.ensureInitialized();
 
   runApp(MyApp());
 }

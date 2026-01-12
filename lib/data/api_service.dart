@@ -789,6 +789,24 @@ static Future<SalesprofileModel?> getsalesProfile() async {
     return response;
   }
 
+
+  
+  static Future<http.Response> viewunitstatement(dynamic json) async {
+    var url = Uri.parse(AppConstants.liveurl + AppConstants.viewunitstatement);
+    Map<String, String> headers = {"Content-Type": "application/json"};
+    var response = await http
+        .post(
+          url,
+          body: jsonEncode(json),
+          headers: headers,
+        )
+        .timeout(
+          const Duration(seconds: timeOutDuration),
+        );
+    print(jsonEncode(json));
+    return response;
+  }
+
   static Future<http.Response> postfeedbacktransaction(dynamic json) async {
     var url = Uri.parse(AppConstants.liveurl + AppConstants.addfeedback);
     Map<String, String> headers = {"Content-Type": "application/json"};
@@ -883,7 +901,7 @@ static Future<SalesprofileModel?> getsalesProfile() async {
   static Future<http.Response> passwordupdate(dynamic json) async {
     var url = Uri.parse(AppConstants.liveurl + AppConstants.updatepassword);
     Map<String, String> headers = {"Content-Type": "application/json"};
-    // var body = {"email": Prefs.getCustomerId('CustomerID')};
+    
     var response =
         await http.post(url, headers: headers, body: jsonEncode(json)).timeout(
               const Duration(seconds: timeOutDuration),

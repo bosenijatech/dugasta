@@ -30,7 +30,7 @@ class AppConstants {
   // static const String getsalesprofile = 'customer/mobileappgetCustomerProfile';
   static const String getnoncontractdetails =
       'api/mobileapp/tenant/getnoncontract';
-
+  static const String viewunitstatement = 'customer/viewunitstatement';
   static const String getrequesttypemaster =
       'api/mobileapp/tenant/getsubcategory';
   static const String getmaincatmaster = 'api/mobileapp/tenant/getmaincategory';
@@ -80,7 +80,8 @@ class AppConstants {
   static const String manageloginupdate =
       "api/mobileapp/tenant/manageloginupdate";
 
-  static const String updatepassword = "api/mobileapp/tenant/updatepassword";
+  // static const String updatepassword = "api/mobileapp/tenant/updatepassword";
+   static const String updatepassword = "customer/updatepassword";
   static const String forgetpassword = "api/mobileapp/sendmail";
   static const String notificationmaster =
       "api/mobileapp/tenant/getnotification";

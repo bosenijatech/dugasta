@@ -13,6 +13,8 @@ import 'package:dugasta/presentation/utils/custom_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../model/sales_profilemodel.dart';
+
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
 
@@ -21,6 +23,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+    ProfileList? profile;
   bool Active = false;
   bool loading = false;
   ProfileModel model = ProfileModel();
@@ -480,7 +483,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => ChangepasswordScreen(model: model)))
+                    builder: (context) => ChangepasswordScreen(model: profile!)))
             .then((_) => getprofiledata());
       } else {
         AppUtils.showSingleDialogPopup(
